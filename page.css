@@ -1,0 +1,454 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: whitesmoke;
+
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: transparent;
+    background-color: whitesmoke;
+}
+
+.logo{
+    position: relative;
+    font-size:25px;
+    color: gray;
+    text-decoration: none ;
+      font-weight: 600;
+}
+
+.logo::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color:#6C63FF;
+}
+
+.home{
+    display: flex;
+    align-items:center;
+    height: 100vh;
+    padding:0 10%;
+
+}
+
+.home-content{
+    max-width:700px;
+
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:#544cee;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 30px;
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #544cee;
+    border: 2px solid #544cee;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    z-index: 1;
+    overflow: hidden;
+    transition: -5s;
+}
+
+.btn-box a:hover{
+    color:blue;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: transparent;
+    color: antiquewhite;
+}
+
+.btn-box a:nth-child(2):hover{
+    color:black;
+
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: -5s ;
+    background-color: whitesmoke;
+    
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+
+}
+
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height:40px;
+    background: transparent;
+    border: 2px solid #544cee;
+    border-radius: 50%;
+    font-size:20px;
+    color: #544cee;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: black;
+}
+
+.home-sci a::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    
+}
+
+.home-sci a :hover::before {
+    width: 100%;
+    background: #544cee;
+}
+
+
+
+.image-right {
+    position:absolute; /* Positions the image relative to its nearest positioned ancestor */
+    right: 0; /* Aligns the image to the right edge */
+    top: 0; /* Aligns the image to the top edge (adjust as needed) */
+    width: 60%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    margin-top: 120px;
+  }
+  .home-content img{
+    width:55%;
+    margin-top: 120px;
+    
+    
+  }
+  
+
+.about h1{
+    text-align:center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+
+.about-content{
+    text-align: end;
+    height: 90vh;
+    
+    padding-top: 6%;
+    
+}
+
+.about-content p{
+    
+    text-align: center;
+    display:inline-flex;
+    max-width:700px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 13%;
+    font-size: 18px;
+    padding-right: 12%;
+    
+    
+}
+
+.about img{
+    float: left;
+    margin-right: 20px; /* Space between the image and text */
+    width: 40%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 6%;
+    margin-left: 11%;
+}
+
+/*..........................................*/
+
+.services h1{
+    text-align:center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.services-content{
+    
+    height: 100vh;
+    
+    padding-top: 6%;
+    
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+    margin-top: 38px;
+}
+
+.cards div{
+    height:470px;
+    width:435px;
+    background:whitesmoke;
+    margin:60px;
+    border-radius: 20px;
+    
+    
+
+}
+
+.cards img{
+    width: 90%;
+    border-radius: 20px;
+    margin: 18px;
+    
+
+}
+.cardthree img{
+    
+    height: 48%;
+}
+
+.cards p{
+    text-align: center;
+    margin: 13px;
+}
+
+
+/*...........................*/
+
+.contact{
+    
+    height: 100vh;
+    
+    padding-top: 6%;
+
+
+    
+    
+}
+
+.contact h1{
+    text-align:center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+.container{
+    
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+        margin-top: 2%;
+        box-shadow: 0 0 10px rgba(0, 0, blue, 0);
+        flex-direction: row;
+}
+.form{
+    
+    /*background-color: #544cee;*/
+    flex-direction: column;
+    margin-left: 60px;
+    min-width: 200%;
+    
+    
+}
+.form-image{
+    width:44%;
+    float: right;
+
+}
+
+label{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+
+}
+
+
+
+input,textarea{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: aliceblue;
+}
+
+/* From Uiverse.io by felipesntr */ 
+button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #544cee;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   button span {
+    color: white;
+   }
+   
+   button .border {
+    position: absolute;
+    border: 0.15em solid #fff;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 9em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+   }
+   
+   button:hover .border {
+    display: block;
+    width: 9.9em;
+    height: 3.7em;
+   }
+   
+   .full-rounded {
+    border-radius: 2em;
+   }
+
+   .footer{
+    
+    height:40vh;
+    align-content: center;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    
+   }
+.footer a{
+    margin: 50px;
+    text-decoration: none;
+    font-size: larger;
+    transition: 0.3s;
+    color: black;
+}
+
+.footer a:hover{
+    color:#6C63FF
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+
+}
+/*footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(33, 32, 32);
+    padding: 20px 200px;
+    align-items: center;
+}*/
